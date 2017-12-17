@@ -130,6 +130,7 @@ public class Secure {
 						continue;
 					}
 
+					System.out.println("-1. Back");
 					System.out.println("0. All Files");
 
 					for (Record record : records) {
@@ -137,6 +138,11 @@ public class Secure {
 					}
 					System.out.print("> ");
 					int id = sc.nextInt();
+
+					if (id == -1) {
+						break;
+					}
+					
 					if (id != 0) {
 						Iterator<Record> itr = records.iterator();
 						while (itr.hasNext()) {
