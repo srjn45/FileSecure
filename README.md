@@ -1,4 +1,4 @@
-# FileSecure
+# FileSecure 3
 Command Line utility to make files inaccessible or unreadable to other programs.
 
 # Prequisite:
@@ -38,7 +38,7 @@ All the files in the current directory and sub directories will be listed
 
 You can either select any one (option number) or all (0) or go back(-1)
 
-After selecting the files needed to be secured select the encrypting algorithm (currently there is only one)
+Enter the Secret Key
 
 The selected files will be encrypted and moved to secure folder
 
@@ -49,6 +49,8 @@ All the secured files in the current directory will be listed
 
 You can either select any one (option number) or all (0) or go back(-1)
 
+Enter the Secret Key
+
 All the selected files will be decrypted
 
 
@@ -57,6 +59,8 @@ All the selected files will be decrypted
 All the secured files in the current directory will be listed
 
 You can either select any one (option number) or all (0) or go back(-1)
+
+Enter the Secret Key
 
 All the selected files will be decrypted and secured file will be deleted
 
