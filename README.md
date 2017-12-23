@@ -1,23 +1,23 @@
 # FileSecure
 Command Line utility to make files inaccessible or unreadable to other programs.
 
-#Prequisite:
+# Prequisite:
 
 Java 8 Runtime
 
-#Installation:
+# Installation:
 
 1. Download & extract FileSecure.zip from builds folder;
 
 2. cd to FileSecure
 
-Windows:
+> Windows:
 
 3. Execute install.bat
 
 4. Add "C:\FileSecure\" to PATH variable 
 
-Linux:
+> Linux:
 
 3. $ sh install.sh (provide the sudo password)
 
