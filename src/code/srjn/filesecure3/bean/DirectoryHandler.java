@@ -10,7 +10,7 @@ public class DirectoryHandler {
 
 	String dirPath;
 
-	List<String> excludes = new ArrayList<String>();
+	List<String> excludes = new ArrayList<>();
 
 	public DirectoryHandler() {
 		this("." + File.separator);
@@ -28,10 +28,10 @@ public class DirectoryHandler {
 		this.excludes = excludes;
 	}
 
-	public List<File> listFiles(String path) {
+	private List<File> listFiles(String path) {
 		File folder = new File(path);
 		File[] listOfFiles = folder.listFiles();
-		List<File> files = new ArrayList<File>();
+		List<File> files = new ArrayList<>();
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("^(.*\\.(?!(");

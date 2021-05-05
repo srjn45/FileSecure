@@ -19,14 +19,16 @@ public class FileHandler {
 	}
 
 	public FileHandler(String filePath, boolean create) throws IOException {
-		new File(filePath).createNewFile();
+		if (create){
+			new File(filePath).createNewFile();
+		}
 		randomAccessFile = new RandomAccessFile(filePath, "rw");
 		fileChannel = randomAccessFile.getChannel();
 	}
 
 	/**
 	 * reads the file from current position to the size specified
-	 * 
+	 *
 	 * @param size
 	 * @return null if EOF else ByteBuffer
 	 * @throws IOException
@@ -41,7 +43,7 @@ public class FileHandler {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param buffer
 	 * @throws IOException
 	 */
